@@ -1,0 +1,85 @@
+<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>net6.0</TargetFramework>
+    <Nullable>enable</Nullable>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <UserSecretsId>aspnet-UniversityOfScienceTwo-FB029281-ED77-4248-8AAD-9F588FFB74AD</UserSecretsId>
+    <DockerComposeProjectPath>../docker-compose.dcproj</DockerComposeProjectPath>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <None Remove="Microsoft.EntityFrameworkCore.SqlServer" />
+    <None Remove="Microsoft.Data.SqlClient" />
+    <None Remove="System.Data.SqlClient" />
+    <None Remove="Docker.DotNet" />
+    <None Remove="Docker.DotNet.BasicAuth" />
+    <None Remove="Models\" />
+    <None Remove="Swashbuckle.AspNetCore" />
+    <None Remove="MySql.Data" />
+    <None Remove="MySql.Data.EntityFrameworkCore" />
+    <None Remove="AspNetCore.HealthChecks.MySql" />
+    <None Remove="MySql.Data.EntityFramework" />
+    <None Remove="MySql.Web" />
+    <None Remove="Devart.Data.MySql" />
+    <None Remove="dbup-mysql" />
+    <None Remove="MySQL.Data.Entities" />
+    <None Remove="MySqlBackup.NET" />
+    <None Remove="MySql.Simple" />
+    <None Remove="MySql.Server" />
+    <None Remove="Pomelo.EntityFrameworkCore.MySql" />
+    <None Remove="Pomelo.JsonObject" />
+    <None Remove="Npgsql" />
+    <None Remove="Npgsql.EntityFrameworkCore.PostgreSQL" />
+    <None Remove="EntityFramework6.Npgsql" />
+  </ItemGroup>
+  <ItemGroup>
+    <PackageReference Include="Microsoft.AspNetCore.Diagnostics.EntityFrameworkCore" Version="6.0.10" />
+    <PackageReference Include="Microsoft.AspNetCore.Identity.EntityFrameworkCore" Version="6.0.10" />
+    <PackageReference Include="Microsoft.AspNetCore.Identity.UI" Version="6.0.10" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.Design" Version="6.0.10">
+      <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+      <PrivateAssets>all</PrivateAssets>
+    </PackageReference>
+    <PackageReference Include="Microsoft.EntityFrameworkCore.Sqlite" Version="6.0.10" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.Tools" Version="6.0.10">
+      <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+      <PrivateAssets>all</PrivateAssets>
+    </PackageReference>
+    <PackageReference Include="Microsoft.EntityFrameworkCore.SqlServer" Version="6.0.10" />
+    <PackageReference Include="Microsoft.Data.SqlClient" Version="5.0.1" />
+    <PackageReference Include="Microsoft.VisualStudio.Web.CodeGeneration.Design" Version="6.0.10" />
+    <PackageReference Include="MySql.EntityFrameworkCore" Version="6.0.7" />
+    <PackageReference Include="MySqlConnector" Version="2.1.13" />
+    <PackageReference Include="System.Data.SqlClient" Version="4.8.4" />
+    <PackageReference Include="Docker.DotNet" Version="3.125.12" />
+    <PackageReference Include="Docker.DotNet.BasicAuth" Version="3.125.12" />
+    <PackageReference Include="Swashbuckle.AspNetCore" Version="6.4.0" />
+    <PackageReference Include="MySql.Data" Version="8.0.31" />
+    <PackageReference Include="MySql.Data.EntityFrameworkCore" Version="8.0.22" />
+    <PackageReference Include="AspNetCore.HealthChecks.MySql" Version="6.0.2" />
+    <PackageReference Include="MySql.Data.EntityFramework" Version="8.0.31" />
+    <PackageReference Include="Devart.Data.MySql" Version="9.0.0" />
+    <PackageReference Include="dbup-mysql" Version="4.6.0" />
+    <PackageReference Include="MySQL.Data.Entities" Version="6.8.3" />
+    <PackageReference Include="MySqlBackup.NET" Version="2.3.7" />
+    <PackageReference Include="MySql.Simple" Version="5.3.5" />
+    <PackageReference Include="MySql.Server" Version="1.1.0" />
+    <PackageReference Include="Pomelo.EntityFrameworkCore.MySql" Version="6.0.2" />
+    <PackageReference Include="Pomelo.JsonObject" Version="2.2.1" />
+    <PackageReference Include="MySql.Web" Version="8.0.30" />
+    <PackageReference Include="Npgsql" Version="6.0.7" />
+    <PackageReference Include="Npgsql.EntityFrameworkCore.PostgreSQL" Version="6.0.7" />
+    <PackageReference Include="EntityFramework6.Npgsql" Version="6.4.3" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Folder Include="Models\" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Update="app.db">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+    </None>
+  </ItemGroup>
+</Project>
