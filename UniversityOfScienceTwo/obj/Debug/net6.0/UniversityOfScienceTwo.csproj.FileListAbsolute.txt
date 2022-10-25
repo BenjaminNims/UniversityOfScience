@@ -349,3 +349,6 @@
 /Users/b.c.nims/Projects/Originals/UniversityOfScienceTwo/UniversityOfScienceTwo/obj/Debug/net6.0/UniversityOfScienceTwo.pdb
 /Users/b.c.nims/Projects/Originals/UniversityOfScienceTwo/UniversityOfScienceTwo/obj/Debug/net6.0/UniversityOfScienceTwo.genruntimeconfig.cache
 /Users/b.c.nims/Projects/Originals/UniversityOfScienceTwo/UniversityOfScienceTwo/obj/Debug/net6.0/ref/UniversityOfScienceTwo.dll
+/Users/b.c.nims/Projects/Originals/UniversityOfScienceTwo/UniversityOfScienceTwo/bin/Debug/net6.0/EntityFramework6.Npgsql.dll
+/Users/b.c.nims/Projects/Originals/UniversityOfScienceTwo/UniversityOfScienceTwo/bin/Debug/net6.0/Npgsql.dll
+/Users/b.c.nims/Projects/Originals/UniversityOfScienceTwo/UniversityOfScienceTwo/bin/Debug/net6.0/Npgsql.EntityFrameworkCore.PostgreSQL.dll

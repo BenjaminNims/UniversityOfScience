@@ -11,14 +11,7 @@ builder.Services.AddRazorPages();
 
 builder.Services.AddDbContext<ApplicationDbContext>(options =>
 {
-    options.UseMySql(
-        "server=localhost;port=3307;database=app2.db.sql;uid=root;password=6fs5jzc6",
-        serverVersion,
-        options => options.EnableRetryOnFailure(
-            maxRetryCount: 1,
-            maxRetryDelay: TimeSpan.FromSeconds(5),
-            errorNumbersToAdd: null)
-        );
+    options.UseNpgsql("Host=localhost;Username=postgres;Password=RangeRover1997!;Database=university");
 });
 
 builder.Services.AddDatabaseDeveloperPageExceptionFilter();
