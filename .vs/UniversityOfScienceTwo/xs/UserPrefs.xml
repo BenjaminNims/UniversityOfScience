@@ -1,10 +1,7 @@
-﻿<Properties StartupConfiguration="{A07B0E13-2410-48F5-8716-57DD8C243C29}|Default">
-  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
-  <MonoDevelop.Ide.DebuggingService.Breakpoints>
-    <BreakpointStore />
-  </MonoDevelop.Ide.DebuggingService.Breakpoints>
-  <MonoDevelop.Ide.ItemProperties.docker-compose PreferredExecutionTarget="MonoDevelop.Default" />
-  <MultiItemStartupConfigurations />
+﻿<Properties StartupConfiguration="{1C327A1A-B686-416E-8DED-819117C4F95A}|Default">
+  <MonoDevelop.Ide.ItemProperties.UniversityOfScienceTwo PreferredExecutionTarget="/Applications/Safari.app" />
+  <MonoDevelop.Ide.DebuggingService.Breakpoints />
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
   <MonoDevelop.Ide.Workbench ActiveDocument="UniversityOfScienceTwo/Data/ApplicationDbContext.cs">
     <Files>
       <File FileName="UniversityOfScienceTwo/Models/Professor.cs" Line="15" Column="6" />
@@ -65,5 +62,6 @@
       </Pad>
     </Pads>
   </MonoDevelop.Ide.Workbench>
-  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+  <MultiItemStartupConfigurations />
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
 </Properties>
