@@ -1,5 +1,6 @@
 using Microsoft.AspNetCore.Identity.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore;
+
 namespace UniversityOfScienceTwo.Data;
 
 public class ApplicationDbContext : IdentityDbContext
@@ -11,6 +12,5 @@ public class ApplicationDbContext : IdentityDbContext
 
     }
 
-    public DbSet<Models.Professor>? Professor { get; set; }
 }
 

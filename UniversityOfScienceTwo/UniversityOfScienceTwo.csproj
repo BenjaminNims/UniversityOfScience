@@ -14,7 +14,6 @@
     <None Remove="System.Data.SqlClient" />
     <None Remove="Docker.DotNet" />
     <None Remove="Docker.DotNet.BasicAuth" />
-    <None Remove="Models\" />
     <None Remove="Swashbuckle.AspNetCore" />
     <None Remove="MySql.Data" />
     <None Remove="MySql.Data.EntityFrameworkCore" />
@@ -73,9 +72,6 @@
     <PackageReference Include="EntityFramework6.Npgsql" Version="6.4.3" />
   </ItemGroup>
 
-  <ItemGroup>
-    <Folder Include="Models\" />
-  </ItemGroup>
   <ItemGroup>
     <None Update="app.db">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
