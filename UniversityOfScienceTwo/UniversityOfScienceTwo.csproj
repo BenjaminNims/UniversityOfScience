@@ -5,15 +5,12 @@
     <Nullable>enable</Nullable>
     <ImplicitUsings>enable</ImplicitUsings>
     <UserSecretsId>aspnet-UniversityOfScienceTwo-FB029281-ED77-4248-8AAD-9F588FFB74AD</UserSecretsId>
-    <DockerComposeProjectPath>../docker-compose.dcproj</DockerComposeProjectPath>
   </PropertyGroup>
 
   <ItemGroup>
     <None Remove="Microsoft.EntityFrameworkCore.SqlServer" />
     <None Remove="Microsoft.Data.SqlClient" />
     <None Remove="System.Data.SqlClient" />
-    <None Remove="Docker.DotNet" />
-    <None Remove="Docker.DotNet.BasicAuth" />
     <None Remove="Swashbuckle.AspNetCore" />
     <None Remove="MySql.Data" />
     <None Remove="MySql.Data.EntityFrameworkCore" />
@@ -51,8 +48,6 @@
     <PackageReference Include="MySql.EntityFrameworkCore" Version="6.0.7" />
     <PackageReference Include="MySqlConnector" Version="2.1.13" />
     <PackageReference Include="System.Data.SqlClient" Version="4.8.4" />
-    <PackageReference Include="Docker.DotNet" Version="3.125.12" />
-    <PackageReference Include="Docker.DotNet.BasicAuth" Version="3.125.12" />
     <PackageReference Include="Swashbuckle.AspNetCore" Version="6.4.0" />
     <PackageReference Include="MySql.Data" Version="8.0.31" />
     <PackageReference Include="MySql.Data.EntityFrameworkCore" Version="8.0.22" />
@@ -72,10 +67,4 @@
     <PackageReference Include="EntityFramework6.Npgsql" Version="6.4.3" />
   </ItemGroup>
 
-  <ItemGroup>
-    <None Update="app.db">
-      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
-    </None>
-  </ItemGroup>
 </Project>

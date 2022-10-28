@@ -11,7 +11,7 @@ builder.Services.AddRazorPages();
 
 builder.Services.AddDbContext<ApplicationDbContext>(options =>
 {
-    options.UseNpgsql("Host=localhost;Username=postgres;Password=RangeRover1997!;Database=university");
+    options.UseNpgsql(connectionString);
 });
 
 builder.Services.AddDatabaseDeveloperPageExceptionFilter();
