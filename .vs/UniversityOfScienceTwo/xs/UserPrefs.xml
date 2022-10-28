@@ -1,58 +1,48 @@
 ﻿<Properties StartupConfiguration="{1C327A1A-B686-416E-8DED-819117C4F95A}|Default">
   <MonoDevelop.Ide.ItemProperties.UniversityOfScienceTwo PreferredExecutionTarget="/Applications/Safari.app" />
-  <MonoDevelop.Ide.DebuggingService.Breakpoints />
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
   <MonoDevelop.Ide.DebuggingService.PinnedWatches />
-  <MonoDevelop.Ide.Workbench ActiveDocument="UniversityOfScienceTwo/Data/ApplicationDbContext.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="UniversityOfScienceTwo/Program.cs">
     <Files>
-      <File FileName="UniversityOfScienceTwo/Models/Professor.cs" Line="15" Column="6" />
-      <File FileName="UniversityOfScienceTwo/Data/ApplicationDbContext.cs" Line="21" Column="1" />
-      <File FileName="UniversityOfScienceTwo/Program.cs" Line="11" Column="1" />
-      <File FileName="UniversityOfScienceTwo/appsettings.json" Line="7" Column="32" />
-      <File FileName="UniversityOfScienceTwo/Pages/Index.cshtml.cs" Line="16" Column="6" />
-      <File FileName="UniversityOfScienceTwo/appsettings.Development.json" Line="1" Column="1" />
-      <File FileName="UniversityOfScienceTwo/app2.db.sql" Line="1" Column="1" />
-      <File FileName="UniversityOfScienceTwo/Pages/Privacy.cshtml" Line="1" Column="1" />
-      <File FileName="UniversityOfScienceTwo/Pages/Privacy.cshtml.cs" Line="22" Column="1" />
-      <File FileName="UniversityOfScienceTwo/Areas/Identity/Pages/Account/Login.cshtml.cs" Line="1" Column="1" />
-      <File FileName=".dockerignore" Line="1" Column="1" />
-      <File FileName="UniversityOfScienceTwo/Dockerfile" Line="1" Column="1" />
-      <File FileName="docker-compose.yml" Line="8" Column="52" />
-      <File FileName="docker-compose.override.yml" Line="1" Column="1" />
+      <File FileName="UniversityOfScienceTwo/UniversityOfScienceTwo.csproj" Line="76" Column="11" />
+      <File FileName="UniversityOfScienceTwo/Data/ApplicationDbContext.cs" Line="12" Column="1" />
+      <File FileName="UniversityOfScienceTwo/Program.cs" Line="78" Column="1" />
+      <File FileName="UniversityOfScienceTwo/app2.db.sql" Line="21" Column="43" />
+      <File FileName="UniversityOfScienceTwo/Migrations/ApplicationDbContextModelSnapshot.cs" Line="7" Column="35" />
+      <File FileName="UniversityOfScienceTwo/Pages/Shared/_Layout.cshtml" Line="1" Column="1" />
+      <File FileName="UniversityOfScienceTwo/Pages/Shared/_Layout.cshtml.css" Line="1" Column="1" />
+      <File FileName="UniversityOfScienceTwo/postgresedit1.sql" Line="106" Column="1" />
+      <File FileName="UniversityOfScienceTwo/Migrations/20221027185108_PostGresUpdateThree.Designer.cs" Line="14" Column="46" />
+      <File FileName="UniversityOfScienceTwo/Migrations/20221027185108_PostGresUpdateThree.cs" Line="14" Column="10" />
+      <File FileName="UniversityOfScienceTwo/Migrations/20221027200149_PostGresUpdateFour.cs" Line="19" Column="2" />
+      <File FileName="UniversityOfScienceTwo/appsettings.json" Line="14" Column="1" />
+      <File FileName="UniversityOfScienceTwo/Migrations/20221027200149_PostGresUpdateFour.Designer.cs" Line="1" Column="1" />
+      <File FileName=".vs/UniversityOfScienceTwo/xs/project-cache/UniversityOfScienceTwo-Debug.json" Line="1" Column="1769" />
+      <File FileName=".vs/UniversityOfScienceTwo/xs/UserPrefs.xml" Line="1" Column="1" />
       <File FileName="UniversityOfScienceTwo/Properties/launchSettings.json" Line="27" Column="2" />
-      <File FileName="UniversityOfScienceTwo/Views/Shared/_ValidationScriptsPartial.cshtml" Line="1" Column="1" />
-      <File FileName="UniversityOfScienceTwo/wwwroot/css/site.css" Line="19" Column="1" />
     </Files>
     <Pads>
       <Pad Id="ProjectPad">
         <State name="__root__">
           <Node name="UniversityOfScienceTwo" expanded="True">
-            <Node name="docker-compose" expanded="True">
-              <Node name="docker-compose.yml" expanded="True" />
-            </Node>
             <Node name="UniversityOfScienceTwo" expanded="True">
-              <Node name="Areas" expanded="True">
-                <Node name="Identity" expanded="True">
-                  <Node name="Pages" expanded="True">
-                    <Node name="Account" expanded="True">
-                      <Node name="Login.cshtml" expanded="True" />
-                    </Node>
-                  </Node>
-                </Node>
+              <Node name="Data" expanded="True" />
+              <Node name="Migrations" expanded="True">
+                <Node name="20221027185108_PostGresUpdateThree.cs" expanded="True" />
+                <Node name="20221027200149_PostGresUpdateFour.cs" expanded="True" />
               </Node>
-              <Node name="Data" expanded="True">
-                <Node name="ApplicationDbContext.cs" selected="True" />
-              </Node>
-              <Node name="Models" expanded="True" />
               <Node name="Pages" expanded="True">
-                <Node name="Error.cshtml" expanded="True" />
-                <Node name="Index.cshtml" expanded="True" />
-                <Node name="Privacy.cshtml" expanded="True" />
+                <Node name="Shared" expanded="True">
+                  <Node name="_Layout.cshtml" expanded="True" />
+                </Node>
               </Node>
               <Node name="Properties" expanded="True" />
               <Node name="Views" expanded="True">
                 <Node name="Shared" expanded="True" />
               </Node>
-              <Node name="appsettings.json" expanded="True" />
+              <Node name="Program.cs" selected="True" />
             </Node>
           </Node>
         </State>
