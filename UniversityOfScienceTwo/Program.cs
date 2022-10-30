@@ -1,9 +1,17 @@
 using Microsoft.AspNetCore.Identity;
 using Microsoft.EntityFrameworkCore;
 using UniversityOfScienceTwo.Data;
+using System.Diagnostics;
 
-var builder = WebApplication.CreateBuilder(args);
-var serverVersion = new MySqlServerVersion(new Version(8, 0, 30));
+System.Diagnostics.Debug.WriteLine("This is a log 1");
+var webApplicationOptions = new WebApplicationOptions
+{
+    ContentRootPath = AppContext.BaseDirectory,
+    Args = args,
+};
+
+System.Diagnostics.Debug.WriteLine("This is a log 2");
+var builder = WebApplication.CreateBuilder(webApplicationOptions);
 
 var connectionString = builder.Configuration.GetConnectionString("DefaultConnection");
 
@@ -66,6 +74,7 @@ else
 }
 
 app.UseHttpsRedirection();
+
 app.UseStaticFiles();
 
 app.UseRouting();
