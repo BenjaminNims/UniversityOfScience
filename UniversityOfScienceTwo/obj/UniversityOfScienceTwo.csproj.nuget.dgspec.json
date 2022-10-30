@@ -46,14 +46,6 @@
               "target": "Package",
               "version": "[9.0.0, )"
             },
-            "Docker.DotNet": {
-              "target": "Package",
-              "version": "[3.125.12, )"
-            },
-            "Docker.DotNet.BasicAuth": {
-              "target": "Package",
-              "version": "[3.125.12, )"
-            },
             "EntityFramework6.Npgsql": {
               "target": "Package",
               "version": "[6.4.3, )"

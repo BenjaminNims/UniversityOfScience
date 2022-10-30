@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "cMiqaR/AHdUkkd4WTxQjFUFWrwCOPQDowfPbSxUdgMemIbOR7TM9JwOPhekMhvXMOufl4ndj139uV7EdD7HSIQ==",
+  "dgSpecHash": "K/683gqyOw5XS/vnJZVZr3gkiOao0lHBdyV8CHbBQAzwKn9Pqh10wLBivnYMTQIUXnBPSUBMo+Rh7zklDSpnUA==",
   "success": true,
   "projectFilePath": "/Users/b.c.nims/Projects/Originals/UniversityOfScienceTwo/UniversityOfScienceTwo/UniversityOfScienceTwo.csproj",
   "expectedPackageFiles": [
@@ -11,8 +11,6 @@
     "/Users/b.c.nims/.nuget/packages/dbup-mysql/4.6.0/dbup-mysql.4.6.0.nupkg.sha512",
     "/Users/b.c.nims/.nuget/packages/devart.data/5.0.2938/devart.data.5.0.2938.nupkg.sha512",
     "/Users/b.c.nims/.nuget/packages/devart.data.mysql/9.0.0/devart.data.mysql.9.0.0.nupkg.sha512",
-    "/Users/b.c.nims/.nuget/packages/docker.dotnet/3.125.12/docker.dotnet.3.125.12.nupkg.sha512",
-    "/Users/b.c.nims/.nuget/packages/docker.dotnet.basicauth/3.125.12/docker.dotnet.basicauth.3.125.12.nupkg.sha512",
     "/Users/b.c.nims/.nuget/packages/entityframework/6.4.4/entityframework.6.4.4.nupkg.sha512",
     "/Users/b.c.nims/.nuget/packages/entityframework6.npgsql/6.4.3/entityframework6.npgsql.6.4.3.nupkg.sha512",
     "/Users/b.c.nims/.nuget/packages/google.protobuf/3.19.4/google.protobuf.3.19.4.nupkg.sha512",

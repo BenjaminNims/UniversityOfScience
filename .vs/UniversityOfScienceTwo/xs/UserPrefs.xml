@@ -1,48 +1,48 @@
 ﻿<Properties StartupConfiguration="{1C327A1A-B686-416E-8DED-819117C4F95A}|Default">
-  <MultiItemStartupConfigurations />
   <MonoDevelop.Ide.ItemProperties.UniversityOfScienceTwo PreferredExecutionTarget="/Applications/Safari.app" />
-  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
     <BreakpointStore />
   </MonoDevelop.Ide.DebuggingService.Breakpoints>
-  <MonoDevelop.Ide.Workbench ActiveDocument="UniversityOfScienceTwo/Migrations/20221030194321_postgresupdatefive.cs">
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+  <MonoDevelop.Ide.Workbench ActiveDocument="UniversityOfScienceTwo/Program.cs">
     <Files>
-      <File FileName="UniversityOfScienceTwo/UniversityOfScienceTwo.csproj" Line="86" Column="1" />
-      <File FileName="UniversityOfScienceTwo/Program.cs" Line="74" Column="1" />
-      <File FileName="../../../.nuget/packages/mysql.data.entityframework/8.0.31/contentFiles/any/netstandard2.1/web.config.transform" Line="8" Column="17" />
-      <File FileName="UniversityOfScienceTwo/postgreseditthree.sql" Line="19" Column="3" />
-      <File FileName="UniversityOfScienceTwo/appsettings.Development.json" Line="1" Column="1" />
-      <File FileName="UniversityOfScienceTwo/appsettings.json" Line="3" Column="51" />
-      <File FileName="UniversityOfScienceTwo/Data/ApplicationDbContext.cs" Line="12" Column="60" />
-      <File FileName="UniversityOfScienceTwo/Program copy.cs" Line="1" Column="1" />
-      <File FileName="UniversityOfScienceTwo/Areas/Identity/Pages/Account/Login.cshtml.cs" Line="97" Column="1" />
-      <File FileName="UniversityOfScienceTwo/Migrations/20221030194321_postgresupdatefive.cs" Line="11" Column="1" />
+      <File FileName="UniversityOfScienceTwo/UniversityOfScienceTwo.csproj" Line="76" Column="11" />
+      <File FileName="UniversityOfScienceTwo/Data/ApplicationDbContext.cs" Line="12" Column="1" />
+      <File FileName="UniversityOfScienceTwo/Program.cs" Line="78" Column="1" />
+      <File FileName="UniversityOfScienceTwo/app2.db.sql" Line="21" Column="43" />
+      <File FileName="UniversityOfScienceTwo/Migrations/ApplicationDbContextModelSnapshot.cs" Line="7" Column="35" />
+      <File FileName="UniversityOfScienceTwo/Pages/Shared/_Layout.cshtml" Line="1" Column="1" />
+      <File FileName="UniversityOfScienceTwo/Pages/Shared/_Layout.cshtml.css" Line="1" Column="1" />
+      <File FileName="UniversityOfScienceTwo/postgresedit1.sql" Line="106" Column="1" />
+      <File FileName="UniversityOfScienceTwo/Migrations/20221027185108_PostGresUpdateThree.Designer.cs" Line="14" Column="46" />
+      <File FileName="UniversityOfScienceTwo/Migrations/20221027185108_PostGresUpdateThree.cs" Line="14" Column="10" />
+      <File FileName="UniversityOfScienceTwo/Migrations/20221027200149_PostGresUpdateFour.cs" Line="19" Column="2" />
+      <File FileName="UniversityOfScienceTwo/appsettings.json" Line="14" Column="1" />
+      <File FileName="UniversityOfScienceTwo/Migrations/20221027200149_PostGresUpdateFour.Designer.cs" Line="1" Column="1" />
+      <File FileName=".vs/UniversityOfScienceTwo/xs/project-cache/UniversityOfScienceTwo-Debug.json" Line="1" Column="1769" />
+      <File FileName=".vs/UniversityOfScienceTwo/xs/UserPrefs.xml" Line="1" Column="1" />
+      <File FileName="UniversityOfScienceTwo/Properties/launchSettings.json" Line="27" Column="2" />
     </Files>
     <Pads>
       <Pad Id="ProjectPad">
         <State name="__root__">
           <Node name="UniversityOfScienceTwo" expanded="True">
             <Node name="UniversityOfScienceTwo" expanded="True">
-              <Node name="Dependencies" expanded="True" />
-              <Node name="Areas" expanded="True">
-                <Node name="Identity" expanded="True">
-                  <Node name="Pages" expanded="True">
-                    <Node name="Account" expanded="True">
-                      <Node name="Login.cshtml" expanded="True" />
-                    </Node>
-                  </Node>
-                </Node>
-              </Node>
               <Node name="Data" expanded="True" />
               <Node name="Migrations" expanded="True">
-                <Node name="20221030194321_postgresupdatefive.cs" selected="True" />
+                <Node name="20221027185108_PostGresUpdateThree.cs" expanded="True" />
+                <Node name="20221027200149_PostGresUpdateFour.cs" expanded="True" />
               </Node>
-              <Node name="postgresedit2" expanded="True" />
+              <Node name="Pages" expanded="True">
+                <Node name="Shared" expanded="True">
+                  <Node name="_Layout.cshtml" expanded="True" />
+                </Node>
+              </Node>
               <Node name="Properties" expanded="True" />
               <Node name="Views" expanded="True">
                 <Node name="Shared" expanded="True" />
               </Node>
-              <Node name="appsettings.json" expanded="True" />
+              <Node name="Program.cs" selected="True" />
             </Node>
           </Node>
         </State>
@@ -52,5 +52,6 @@
       </Pad>
     </Pads>
   </MonoDevelop.Ide.Workbench>
+  <MultiItemStartupConfigurations />
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
 </Properties>

@@ -1,9 +1,0 @@
-version: '3.4'
-
-services:
-  universityofsciencetwo:
-    image: ${DOCKER_REGISTRY-}universityofsciencetwo
-    build:
-      context: .
-      dockerfile: UniversityOfScienceTwo/Dockerfile
-

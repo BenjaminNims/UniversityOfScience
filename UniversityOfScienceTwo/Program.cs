@@ -1,9 +1,17 @@
 using Microsoft.AspNetCore.Identity;
 using Microsoft.EntityFrameworkCore;
 using UniversityOfScienceTwo.Data;
+using System.Diagnostics;
 
-var builder = WebApplication.CreateBuilder(args);
-var serverVersion = new MySqlServerVersion(new Version(8, 0, 30));
+System.Diagnostics.Debug.WriteLine("This is a log 1");
+var webApplicationOptions = new WebApplicationOptions
+{
+    ContentRootPath = AppContext.BaseDirectory,
+    Args = args,
+};
+
+System.Diagnostics.Debug.WriteLine("This is a log 2");
+var builder = WebApplication.CreateBuilder(webApplicationOptions);
 
 var connectionString = builder.Configuration.GetConnectionString("DefaultConnection");
 
@@ -11,14 +19,7 @@ builder.Services.AddRazorPages();
 
 builder.Services.AddDbContext<ApplicationDbContext>(options =>
 {
-    options.UseMySql(
-        "server=localhost;port=3307;database=app2.db.sql;uid=root;password=6fs5jzc6",
-        serverVersion,
-        options => options.EnableRetryOnFailure(
-            maxRetryCount: 1,
-            maxRetryDelay: TimeSpan.FromSeconds(5),
-            errorNumbersToAdd: null)
-        );
+    options.UseNpgsql(connectionString);
 });
 
 builder.Services.AddDatabaseDeveloperPageExceptionFilter();
@@ -73,6 +74,7 @@ else
 }
 
 app.UseHttpsRedirection();
+
 app.UseStaticFiles();
 
 app.UseRouting();
