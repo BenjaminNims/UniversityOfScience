@@ -24,3 +24,5 @@
 /Users/b.c.nims/Projects/Originals/UniversityOfScienceTwo/obj/Debug/docker-compose.dcproj.AssemblyReference.cache
 /Users/b.c.nims/Projects/Originals/UniversityOfScienceTwo/obj/Debug/docker-compose.dcproj.CoreCompileInputs.cache
 /Users/b.c.nims/Projects/Originals/UniversityOfScienceTwo/obj/Debug/docker-compose.dcproj.CopyComplete
+/Users/b.c.nims/Projects/Originals/UniversityOfScienceTwo/bin/Debug/Npgsql.EntityFrameworkCore.PostgreSQL.dll
+/Users/b.c.nims/Projects/Originals/UniversityOfScienceTwo/bin/Debug/Npgsql.dll

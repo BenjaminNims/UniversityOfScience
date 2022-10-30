@@ -102,32 +102,6 @@
           "lib/netstandard2.0/Devart.Data.MySql.dll": {}
         }
       },
-      "Docker.DotNet/3.125.12": {
-        "type": "package",
-        "dependencies": {
-          "Newtonsoft.Json": "13.0.1",
-          "System.Buffers": "4.5.1",
-          "System.Threading.Tasks.Extensions": "4.5.4"
-        },
-        "compile": {
-          "lib/netstandard2.1/Docker.DotNet.dll": {}
-        },
-        "runtime": {
-          "lib/netstandard2.1/Docker.DotNet.dll": {}
-        }
-      },
-      "Docker.DotNet.BasicAuth/3.125.12": {
-        "type": "package",
-        "dependencies": {
-          "Docker.DotNet": "3.125.12"
-        },
-        "compile": {
-          "lib/netstandard2.1/Docker.DotNet.BasicAuth.dll": {}
-        },
-        "runtime": {
-          "lib/netstandard2.1/Docker.DotNet.BasicAuth.dll": {}
-        }
-      },
       "EntityFramework/6.4.4": {
         "type": "package",
         "dependencies": {
@@ -4263,40 +4237,6 @@
         "lib/netstandard1.3/Devart.Data.MySql.dll",
         "lib/netstandard2.0/Devart.Data.MySql.dll",
         "mysql.png"
-      ]
-    },
-    "Docker.DotNet/3.125.12": {
-      "sha512": "lkDh6PUV8SIM1swPCkd3f+8zGB7Z9Am3C2XBLqAjyIIp5jQBCsDFrtbtA1QiVdFMWdYcJscrX/gzzG50kRj0jQ==",
-      "type": "package",
-      "path": "docker.dotnet/3.125.12",
-      "files": [
-        ".nupkg.metadata",
-        ".signature.p7s",
-        "LICENSE",
-        "docker.dotnet.3.125.12.nupkg.sha512",
-        "docker.dotnet.nuspec",
-        "icon.png",
-        "lib/netstandard2.0/Docker.DotNet.dll",
-        "lib/netstandard2.0/Docker.DotNet.pdb",
-        "lib/netstandard2.1/Docker.DotNet.dll",
-        "lib/netstandard2.1/Docker.DotNet.pdb"
-      ]
-    },
-    "Docker.DotNet.BasicAuth/3.125.12": {
-      "sha512": "FuDjWPSR7YceLWxfwKdZY2ZzSEzwThvIBJ8P6VO/P2fnd9InVFm0VqeK+oeBhRKtOF6OVqe4+H+uVA84wc4PNQ==",
-      "type": "package",
-      "path": "docker.dotnet.basicauth/3.125.12",
-      "files": [
-        ".nupkg.metadata",
-        ".signature.p7s",
-        "LICENSE",
-        "docker.dotnet.basicauth.3.125.12.nupkg.sha512",
-        "docker.dotnet.basicauth.nuspec",
-        "icon.png",
-        "lib/netstandard2.0/Docker.DotNet.BasicAuth.dll",
-        "lib/netstandard2.0/Docker.DotNet.BasicAuth.pdb",
-        "lib/netstandard2.1/Docker.DotNet.BasicAuth.dll",
-        "lib/netstandard2.1/Docker.DotNet.BasicAuth.pdb"
       ]
     },
     "EntityFramework/6.4.4": {
@@ -12507,8 +12447,6 @@
     "net6.0": [
       "AspNetCore.HealthChecks.MySql >= 6.0.2",
       "Devart.Data.MySql >= 9.0.0",
-      "Docker.DotNet >= 3.125.12",
-      "Docker.DotNet.BasicAuth >= 3.125.12",
       "EntityFramework6.Npgsql >= 6.4.3",
       "Microsoft.AspNetCore.Diagnostics.EntityFrameworkCore >= 6.0.10",
       "Microsoft.AspNetCore.Identity.EntityFrameworkCore >= 6.0.10",
@@ -12582,14 +12520,6 @@
           "Devart.Data.MySql": {
             "target": "Package",
             "version": "[9.0.0, )"
-          },
-          "Docker.DotNet": {
-            "target": "Package",
-            "version": "[3.125.12, )"
-          },
-          "Docker.DotNet.BasicAuth": {
-            "target": "Package",
-            "version": "[3.125.12, )"
           },
           "EntityFramework6.Npgsql": {
             "target": "Package",

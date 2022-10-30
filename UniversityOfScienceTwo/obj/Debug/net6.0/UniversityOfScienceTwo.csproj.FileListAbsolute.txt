@@ -1,7 +1,6 @@
 /Users/b.c.nims/Projects/Originals/UniversityOfScienceTwo/UniversityOfScienceTwo/bin/Debug/net6.0/appsettings.Development.json
 /Users/b.c.nims/Projects/Originals/UniversityOfScienceTwo/UniversityOfScienceTwo/bin/Debug/net6.0/appsettings.json
 /Users/b.c.nims/Projects/Originals/UniversityOfScienceTwo/UniversityOfScienceTwo/bin/Debug/net6.0/UniversityOfScienceTwo.staticwebassets.runtime.json
-/Users/b.c.nims/Projects/Originals/UniversityOfScienceTwo/UniversityOfScienceTwo/bin/Debug/net6.0/app.db
 /Users/b.c.nims/Projects/Originals/UniversityOfScienceTwo/UniversityOfScienceTwo/bin/Debug/net6.0/UniversityOfScienceTwo
 /Users/b.c.nims/Projects/Originals/UniversityOfScienceTwo/UniversityOfScienceTwo/bin/Debug/net6.0/UniversityOfScienceTwo.deps.json
 /Users/b.c.nims/Projects/Originals/UniversityOfScienceTwo/UniversityOfScienceTwo/bin/Debug/net6.0/UniversityOfScienceTwo.runtimeconfig.json
@@ -14,10 +13,9 @@
 /Users/b.c.nims/Projects/Originals/UniversityOfScienceTwo/UniversityOfScienceTwo/bin/Debug/net6.0/dbup-mysql.dll
 /Users/b.c.nims/Projects/Originals/UniversityOfScienceTwo/UniversityOfScienceTwo/bin/Debug/net6.0/Devart.Data.dll
 /Users/b.c.nims/Projects/Originals/UniversityOfScienceTwo/UniversityOfScienceTwo/bin/Debug/net6.0/Devart.Data.MySql.dll
-/Users/b.c.nims/Projects/Originals/UniversityOfScienceTwo/UniversityOfScienceTwo/bin/Debug/net6.0/Docker.DotNet.dll
-/Users/b.c.nims/Projects/Originals/UniversityOfScienceTwo/UniversityOfScienceTwo/bin/Debug/net6.0/Docker.DotNet.BasicAuth.dll
 /Users/b.c.nims/Projects/Originals/UniversityOfScienceTwo/UniversityOfScienceTwo/bin/Debug/net6.0/EntityFramework.SqlServer.dll
 /Users/b.c.nims/Projects/Originals/UniversityOfScienceTwo/UniversityOfScienceTwo/bin/Debug/net6.0/EntityFramework.dll
+/Users/b.c.nims/Projects/Originals/UniversityOfScienceTwo/UniversityOfScienceTwo/bin/Debug/net6.0/EntityFramework6.Npgsql.dll
 /Users/b.c.nims/Projects/Originals/UniversityOfScienceTwo/UniversityOfScienceTwo/bin/Debug/net6.0/Google.Protobuf.dll
 /Users/b.c.nims/Projects/Originals/UniversityOfScienceTwo/UniversityOfScienceTwo/bin/Debug/net6.0/Humanizer.dll
 /Users/b.c.nims/Projects/Originals/UniversityOfScienceTwo/UniversityOfScienceTwo/bin/Debug/net6.0/K4os.Compression.LZ4.dll
@@ -106,6 +104,8 @@
 /Users/b.c.nims/Projects/Originals/UniversityOfScienceTwo/UniversityOfScienceTwo/bin/Debug/net6.0/MySqlBackup.dll
 /Users/b.c.nims/Projects/Originals/UniversityOfScienceTwo/UniversityOfScienceTwo/bin/Debug/net6.0/MySqlConnector.dll
 /Users/b.c.nims/Projects/Originals/UniversityOfScienceTwo/UniversityOfScienceTwo/bin/Debug/net6.0/Newtonsoft.Json.dll
+/Users/b.c.nims/Projects/Originals/UniversityOfScienceTwo/UniversityOfScienceTwo/bin/Debug/net6.0/Npgsql.dll
+/Users/b.c.nims/Projects/Originals/UniversityOfScienceTwo/UniversityOfScienceTwo/bin/Debug/net6.0/Npgsql.EntityFrameworkCore.PostgreSQL.dll
 /Users/b.c.nims/Projects/Originals/UniversityOfScienceTwo/UniversityOfScienceTwo/bin/Debug/net6.0/NuGet.Common.dll
 /Users/b.c.nims/Projects/Originals/UniversityOfScienceTwo/UniversityOfScienceTwo/bin/Debug/net6.0/NuGet.Configuration.dll
 /Users/b.c.nims/Projects/Originals/UniversityOfScienceTwo/UniversityOfScienceTwo/bin/Debug/net6.0/NuGet.DependencyResolver.Core.dll
