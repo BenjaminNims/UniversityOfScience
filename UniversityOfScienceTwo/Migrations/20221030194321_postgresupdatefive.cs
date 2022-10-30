@@ -4,7 +4,7 @@
 
 namespace UniversityOfScienceTwo.Migrations
 {
-    public partial class PostGresUpdateFour : Migration
+    public partial class postgresupdatefive : Migration
     {
         protected override void Up(MigrationBuilder migrationBuilder)
         {

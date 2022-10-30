@@ -12,8 +12,8 @@ using UniversityOfScienceTwo.Data;
 namespace UniversityOfScienceTwo.Migrations
 {
     [DbContext(typeof(ApplicationDbContext))]
-    [Migration("20221027200149_PostGresUpdateFour")]
-    partial class PostGresUpdateFour
+    [Migration("20221030194321_postgresupdatefive")]
+    partial class postgresupdatefive
     {
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
