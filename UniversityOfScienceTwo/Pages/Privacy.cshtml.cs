@@ -5,7 +5,7 @@ using Microsoft.Extensions.Logging;
 
 namespace UniversityOfScienceTwo.Pages;
 
-[Authorize]
+[AllowAnonymous]
 public class PrivacyModel : PageModel
 {
     private readonly ILogger<PrivacyModel> _logger;

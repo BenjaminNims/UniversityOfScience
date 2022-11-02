@@ -2,6 +2,8 @@ using Microsoft.AspNetCore.Identity;
 using Microsoft.EntityFrameworkCore;
 using UniversityOfScienceTwo.Data;
 using System.Diagnostics;
+using Microsoft.AspNetCore.Authorization;
+using UniversityOfScienceTwo.Authorization;
 
 System.Diagnostics.Debug.WriteLine("This is a log 1");
 var webApplicationOptions = new WebApplicationOptions
@@ -28,6 +30,15 @@ builder.Services.AddDefaultIdentity<IdentityUser>(options => options.SignIn.Requ
     .AddRoles<IdentityRole>()
     .AddEntityFrameworkStores<ApplicationDbContext>();
 builder.Services.AddRazorPages();
+
+builder.Services.AddScoped<IAuthorizationHandler,
+                      IsOwnerUniversityAuthorizationHandler>();
+
+builder.Services.AddSingleton<IAuthorizationHandler,
+                      UniversityAdminAuthorizationHandler>();
+
+builder.Services.AddSingleton<IAuthorizationHandler,
+                      UniversityProfessorAuthorizationHandler>();
 
 builder.Services.Configure<IdentityOptions>(options =>
 {
@@ -62,6 +73,20 @@ builder.Services.ConfigureApplicationCookie(options =>
 });
 
 var app = builder.Build();
+
+using (var scope = app.Services.CreateScope())
+{
+    var services = scope.ServiceProvider;
+    var context = services.GetRequiredService<ApplicationDbContext>();
+    context.Database.Migrate();
+    // requires using Microsoft.Extensions.Configuration;
+    // Set password with the Secret Manager tool.
+    // dotnet user-secrets set SeedUserPW <pw>
+
+    var testUserPw = builder.Configuration.GetValue<string>("SeedUserPW");
+
+    await SeedData.Initialize(services, testUserPw);
+}
 
 if (app.Environment.IsDevelopment())
 {

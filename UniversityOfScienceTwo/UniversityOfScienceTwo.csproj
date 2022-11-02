@@ -28,6 +28,9 @@
     <None Remove="Npgsql" />
     <None Remove="Npgsql.EntityFrameworkCore.PostgreSQL" />
     <None Remove="EntityFramework6.Npgsql" />
+    <None Remove="Authorization\" />
+    <None Remove="Models\" />
+    <None Remove="Pages\Courses\" />
   </ItemGroup>
   <ItemGroup>
     <PackageReference Include="Microsoft.AspNetCore.Diagnostics.EntityFrameworkCore" Version="6.0.10" />
@@ -67,4 +70,9 @@
     <PackageReference Include="EntityFramework6.Npgsql" Version="6.4.3" />
   </ItemGroup>
 
+  <ItemGroup>
+    <Folder Include="Authorization\" />
+    <Folder Include="Models\" />
+    <Folder Include="Pages\Courses\" />
+  </ItemGroup>
 </Project>
