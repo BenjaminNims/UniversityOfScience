@@ -14,7 +14,7 @@
     <thead>
         <tr>
             <th>
-                @Html.DisplayNameFor(model => model.Course[0].OwnerID)
+                @Html.DisplayNameFor(model => model.Course[0].OwnerId)
             </th>
             <th>
                 @Html.DisplayNameFor(model => model.Course[0].Name)
@@ -32,7 +32,7 @@
 @foreach (var item in Model.Course) {
         <tr>
             <td>
-                @Html.DisplayFor(modelItem => item.OwnerID)
+                @Html.DisplayFor(modelItem => item.OwnerId)
             </td>
             <td>
                 @Html.DisplayFor(modelItem => item.Name)
@@ -49,18 +49,18 @@
                 item,
                 UniversityOperations.Update)).Succeeded)
                 {
-                    <a asp-page="./Edit" asp-route-id="@item.ID">Edit</a>
+                    <a asp-page="./Edit" asp-route-id="@item.CourseId">Edit</a>
                     <text> || </text>
                 }
 
-                <a asp-page="./Details" asp-route-id="@item.ID">Details</a>
+                <a asp-page="./Details" asp-route-id="@item.CourseId">Details</a>
 
                 @if ((await AuthorizationService.AuthorizeAsync(
                     User, item,
                     UniversityOperations.Delete)).Succeeded)
                 {
                     <text> | </text>
-                    <a asp-page="./Delete" asp-route-id="@item.ID">Delete</a>
+                    <a asp-page="./Delete" asp-route-id="@item.CourseId">Delete</a>
                 }
             </td>
         </tr>

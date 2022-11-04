@@ -29,7 +29,7 @@ namespace UniversityOfScienceTwo.Pages.Courses
 
         public async Task<IActionResult> OnGetAsync(int? id)
         {
-            Course? _course = await Context.Course.FirstOrDefaultAsync(m => m.ID == id);
+            Course? _course = await Context.Course.FirstOrDefaultAsync(m => m.CourseId == id);
             if (_course == null)
             {
                 return NotFound();
@@ -43,7 +43,7 @@ namespace UniversityOfScienceTwo.Pages.Courses
             var currentUserId = UserManager.GetUserId(User);
 
             if (!isAuthorized
-            && currentUserId != Course.OwnerID
+            && currentUserId != Course.OwnerId
             && Course.Status != CourseStatus.Approved)
             {
                 return Forbid();
@@ -55,7 +55,7 @@ namespace UniversityOfScienceTwo.Pages.Courses
         public async Task<IActionResult> OnPostAsync(int id, CourseStatus status)
         {
             var course = await Context.Course.FirstOrDefaultAsync(
-                                                      m => m.ID == id);
+                                                      m => m.CourseId == id);
 
             if (course == null)
             {

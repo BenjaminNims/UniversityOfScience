@@ -31,7 +31,7 @@ namespace UniversityOfScienceTwo.Pages.Courses
         {
 
             Course? _course = await Context.Course.FirstOrDefaultAsync(
-                                             m => m.ID == id);
+                                             m => m.CourseId == id);
 
             if (_course == null)
             {
@@ -54,7 +54,7 @@ namespace UniversityOfScienceTwo.Pages.Courses
 
         public async Task<IActionResult> OnPostAsync(int? id)
         {
-            var course = await Context.Course.AsNoTracking().FirstOrDefaultAsync(m => m.ID == id);
+            var course = await Context.Course.AsNoTracking().FirstOrDefaultAsync(m => m.CourseId == id);
             
 
             if (course != null)

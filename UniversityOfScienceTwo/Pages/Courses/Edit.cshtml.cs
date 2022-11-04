@@ -30,7 +30,7 @@ namespace UniversityOfScienceTwo.Pages.Courses
 
         public async Task<IActionResult> OnGetAsync(int? id)
         {
-            Course? course = await Context.Course.FirstOrDefaultAsync(m => m.ID == id);
+            Course? course = await Context.Course.FirstOrDefaultAsync(m => m.CourseId == id);
 
             if (Course == null)
             {
@@ -58,7 +58,7 @@ namespace UniversityOfScienceTwo.Pages.Courses
                 return Page();
             }
 
-            var course = await Context.Course.AsNoTracking().FirstOrDefaultAsync(m => m.ID == id);
+            var course = await Context.Course.AsNoTracking().FirstOrDefaultAsync(m => m.CourseId == id);
 
 
             if (course == null)
@@ -75,7 +75,7 @@ namespace UniversityOfScienceTwo.Pages.Courses
                 return Forbid();
             }
 
-            Course.OwnerID = course.OwnerID;
+            Course.OwnerId = course.OwnerId;
 
             Context.Attach(Course).State = EntityState.Modified;
 

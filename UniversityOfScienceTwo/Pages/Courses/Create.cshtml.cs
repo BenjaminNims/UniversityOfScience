@@ -41,7 +41,7 @@ namespace UniversityOfScienceTwo.Pages.Courses
                 return Page();
             }
 
-            Course.OwnerID = UserManager.GetUserId(User);
+            Course.OwnerId = UserManager.GetUserId(User);
 
             var isAuthorized = await AuthorizationService.AuthorizeAsync(User, Course, UniversityOperations.Create);
 

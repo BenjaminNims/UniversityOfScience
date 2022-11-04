@@ -4,6 +4,7 @@ using UniversityOfScienceTwo.Data;
 using System.Diagnostics;
 using Microsoft.AspNetCore.Authorization;
 using UniversityOfScienceTwo.Authorization;
+using Microsoft.Extensions.Configuration;
 
 System.Diagnostics.Debug.WriteLine("This is a log 1");
 var webApplicationOptions = new WebApplicationOptions

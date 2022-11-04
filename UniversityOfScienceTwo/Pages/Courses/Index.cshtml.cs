@@ -40,7 +40,7 @@ namespace UniversityOfScienceTwo.Pages.Courses
             if (!isAuthorized)
             {
                 courses = courses.Where(c => c.Status == CourseStatus.Approved
-                                            || c.OwnerID == currentUserId);
+                                            || c.OwnerId == currentUserId);
             }
 
             Course = await courses.ToListAsync();

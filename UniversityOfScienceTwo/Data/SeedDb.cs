@@ -29,7 +29,7 @@ namespace UniversityOfScienceTwo.Data
                 var managerID = await EnsureUser(serviceProvider, testUserPw, "norm@uscience.com");
                 await EnsureRole(serviceProvider, managerID, Constants.UniversityProfessorsRole);
 
-                SeedDB(context, adminID);
+                SeedDB(context, adminID, managerID);
             }
         }
 
@@ -93,7 +93,7 @@ namespace UniversityOfScienceTwo.Data
         }
         #endregion
         #region snippet1
-        public static void SeedDB(ApplicationDbContext context, string adminID)
+        public static void SeedDB(ApplicationDbContext context, string adminID, string managerID)
         {
             if (context.Course.Any())
             {
@@ -107,7 +107,7 @@ namespace UniversityOfScienceTwo.Data
                     Name = "Introduction to Logic",
                     Designation = "LOG101",
                     Status = CourseStatus.Approved,
-                    OwnerID = adminID
+                    OwnerId = adminID,
                 },
             #endregion
             #endregion
@@ -116,9 +116,11 @@ namespace UniversityOfScienceTwo.Data
                     Name = "Remedial Chaos Theory",
                     Designation = "COMM101",
                     Status = CourseStatus.Submitted,
-                    OwnerID = adminID
+                    OwnerId = adminID
                 }
-             );
+                );
+
+            
             context.SaveChanges();
         }
     }

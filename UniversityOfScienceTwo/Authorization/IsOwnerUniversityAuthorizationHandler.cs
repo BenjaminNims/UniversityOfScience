@@ -37,7 +37,7 @@ namespace UniversityOfScienceTwo.Authorization
                 return Task.CompletedTask;
             }
 
-            if (resource.OwnerID == _userManager.GetUserId(context.User))
+            if (resource.OwnerId == _userManager.GetUserId(context.User))
             {
                 context.Succeed(requirement);
             }
