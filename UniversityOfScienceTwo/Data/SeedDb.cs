@@ -92,36 +92,68 @@ namespace UniversityOfScienceTwo.Data
             return IR;
         }
         #endregion
+
+
         #region snippet1
         public static void SeedDB(ApplicationDbContext context, string adminID, string managerID)
         {
+
             if (context.Course.Any())
             {
                 return;   // DB has been seeded
             }
 
-            context.Course.AddRange(
+            context.Course.AttachRange(
             #region snippet_Contact
                 new Course
                 {
                     Name = "Introduction to Logic",
-                    Designation = "LOG101",
+                    Designation = "LOG102",
                     Status = CourseStatus.Approved,
-                    OwnerId = adminID,
+                    OwnerId = adminID
                 },
             #endregion
             #endregion
                 new Course
                 {
                     Name = "Remedial Chaos Theory",
-                    Designation = "COMM101",
-                    Status = CourseStatus.Submitted,
+                    Designation = "COMM102",
+                    Status = CourseStatus.Approved,
                     OwnerId = adminID
                 }
                 );
 
+            if (context.Professor.Any())
+            {
+                return;   // DB has been seeded
+            }
+
+            context.Professor.AttachRange(
+                new Professor
+                {
+                   FirstName = "Norman",
+                   LastName = "Macdonald",
+                   Email = "norm@uscience.com",
+                   OwnerId = managerID,
+                },
+                new Professor
+                {
+                   FirstName = "Gregory",
+                   LastName = "Ilyenivich",
+                   Email = "greg@uscience.com",
+                   OwnerId = managerID
+                }
+                );
+            try
+            {
+                context.SaveChanges();
+            }
+            catch (DbUpdateConcurrencyException e)
+            {
+                Console.WriteLine(e.Message);
+                throw e;
+            }
             
-            context.SaveChanges();
         }
     }
 }

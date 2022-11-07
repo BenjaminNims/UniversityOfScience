@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "K/683gqyOw5XS/vnJZVZr3gkiOao0lHBdyV8CHbBQAzwKn9Pqh10wLBivnYMTQIUXnBPSUBMo+Rh7zklDSpnUA==",
+  "dgSpecHash": "4EsYJfVRJQK05aINi/AtfZ+j/8/vLdsC7uqPPjjsoJNbmVPlx+cLKozzYqmMlCvtnqQYZnzUMoEZDDMFjB6Hew==",
   "success": true,
   "projectFilePath": "/Users/b.c.nims/Projects/Originals/UniversityOfScienceTwo/UniversityOfScienceTwo/UniversityOfScienceTwo.csproj",
   "expectedPackageFiles": [
@@ -13,6 +13,8 @@
     "/Users/b.c.nims/.nuget/packages/devart.data.mysql/9.0.0/devart.data.mysql.9.0.0.nupkg.sha512",
     "/Users/b.c.nims/.nuget/packages/entityframework/6.4.4/entityframework.6.4.4.nupkg.sha512",
     "/Users/b.c.nims/.nuget/packages/entityframework6.npgsql/6.4.3/entityframework6.npgsql.6.4.3.nupkg.sha512",
+    "/Users/b.c.nims/.nuget/packages/entityframeworkcore.exceptions.common/6.0.3/entityframeworkcore.exceptions.common.6.0.3.nupkg.sha512",
+    "/Users/b.c.nims/.nuget/packages/entityframeworkcore.exceptions.postgresql/6.0.3/entityframeworkcore.exceptions.postgresql.6.0.3.nupkg.sha512",
     "/Users/b.c.nims/.nuget/packages/google.protobuf/3.19.4/google.protobuf.3.19.4.nupkg.sha512",
     "/Users/b.c.nims/.nuget/packages/humanizer.core/2.8.26/humanizer.core.2.8.26.nupkg.sha512",
     "/Users/b.c.nims/.nuget/packages/k4os.compression.lz4/1.2.6/k4os.compression.lz4.1.2.6.nupkg.sha512",

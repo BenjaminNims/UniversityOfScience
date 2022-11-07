@@ -50,6 +50,10 @@
               "target": "Package",
               "version": "[6.4.3, )"
             },
+            "EntityFrameworkCore.Exceptions.PostgreSQL": {
+              "target": "Package",
+              "version": "[6.0.3, )"
+            },
             "Microsoft.AspNetCore.Diagnostics.EntityFrameworkCore": {
               "target": "Package",
               "version": "[6.0.10, )"
