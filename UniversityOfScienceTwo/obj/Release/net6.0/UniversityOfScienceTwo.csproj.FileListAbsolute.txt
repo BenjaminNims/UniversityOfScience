@@ -349,3 +349,10 @@
 /Users/b.c.nims/Projects/Originals/UniversityOfScienceTwo/UniversityOfScienceTwo/obj/Release/net6.0/UniversityOfScienceTwo.pdb
 /Users/b.c.nims/Projects/Originals/UniversityOfScienceTwo/UniversityOfScienceTwo/obj/Release/net6.0/UniversityOfScienceTwo.genruntimeconfig.cache
 /Users/b.c.nims/Projects/Originals/UniversityOfScienceTwo/UniversityOfScienceTwo/obj/Release/net6.0/ref/UniversityOfScienceTwo.dll
+/Users/b.c.nims/Projects/Originals/UniversityOfScienceTwo/UniversityOfScienceTwo/bin/Release/net6.0/EntityFramework.Exceptions.Common.dll
+/Users/b.c.nims/Projects/Originals/UniversityOfScienceTwo/UniversityOfScienceTwo/bin/Release/net6.0/EntityFramework.Exceptions.PostgreSQL.dll
+/Users/b.c.nims/Projects/Originals/UniversityOfScienceTwo/UniversityOfScienceTwo/obj/Release/net6.0/staticwebassets/msbuild.UniversityOfScienceTwo.Microsoft.AspNetCore.StaticWebAssets.props
+/Users/b.c.nims/Projects/Originals/UniversityOfScienceTwo/UniversityOfScienceTwo/obj/Release/net6.0/staticwebassets/msbuild.build.UniversityOfScienceTwo.props
+/Users/b.c.nims/Projects/Originals/UniversityOfScienceTwo/UniversityOfScienceTwo/obj/Release/net6.0/staticwebassets/msbuild.buildMultiTargeting.UniversityOfScienceTwo.props
+/Users/b.c.nims/Projects/Originals/UniversityOfScienceTwo/UniversityOfScienceTwo/obj/Release/net6.0/staticwebassets/msbuild.buildTransitive.UniversityOfScienceTwo.props
+/Users/b.c.nims/Projects/Originals/UniversityOfScienceTwo/UniversityOfScienceTwo/obj/Release/net6.0/staticwebassets.pack.json

@@ -49,10 +49,7 @@ namespace UniversityOfScienceTwo.Data
                 await userManager.CreateAsync(user, testUserPw);
             }
 
-            if (user == null)
-            {
-                throw new Exception("This password belongs in the doghouse. Try a stronger one.");
-            }
+            _ = user ?? throw new Exception("This password belongs in the doghouse. Try a stronger one.");
 
             return user.Id;
         }
@@ -62,10 +59,7 @@ namespace UniversityOfScienceTwo.Data
         {
             var roleManager = serviceProvider.GetService<RoleManager<IdentityRole>>();
 
-            if (roleManager == null)
-            {
-                throw new Exception("roleManager null");
-            }
+            _ = roleManager ?? throw new Exception("roleManager is null.");
 
             IdentityResult IR;
             if (!await roleManager.RoleExistsAsync(role))
@@ -82,10 +76,7 @@ namespace UniversityOfScienceTwo.Data
 
             var user = await userManager.FindByIdAsync(uid);
 
-            if (user == null)
-            {
-                throw new Exception("The testUserPw password was probably not strong enough!");
-            }
+            _ = user ?? throw new Exception("The testUserPw password belongs in the doghouse. Try a stronger one.");
 
             IR = await userManager.AddToRoleAsync(user, role);
 

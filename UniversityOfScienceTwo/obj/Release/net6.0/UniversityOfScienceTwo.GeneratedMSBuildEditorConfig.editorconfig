@@ -5,6 +5,7 @@ build_property.UsingMicrosoftNETSdkWeb = true
 build_property.ProjectTypeGuids = 
 build_property.InvariantGlobalization = 
 build_property.PlatformNeutralAssembly = 
+build_property.EnforceExtendedAnalyzerRules = 
 build_property._SupportedPlatformList = Linux,macOS,Windows
 build_property.RootNamespace = UniversityOfScienceTwo
 build_property.RootNamespace = UniversityOfScienceTwo
@@ -47,8 +48,48 @@ build_metadata.AdditionalFiles.CssScope =
 build_metadata.AdditionalFiles.TargetPath = QXJlYXMvSWRlbnRpdHkvUGFnZXMvX1ZpZXdTdGFydC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
+[/Users/b.c.nims/Projects/Originals/UniversityOfScienceTwo/UniversityOfScienceTwo/Pages/Courses/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXMvQ291cnNlcy9DcmVhdGUuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/b.c.nims/Projects/Originals/UniversityOfScienceTwo/UniversityOfScienceTwo/Pages/Courses/Delete.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXMvQ291cnNlcy9EZWxldGUuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/b.c.nims/Projects/Originals/UniversityOfScienceTwo/UniversityOfScienceTwo/Pages/Courses/Details.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXMvQ291cnNlcy9EZXRhaWxzLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/b.c.nims/Projects/Originals/UniversityOfScienceTwo/UniversityOfScienceTwo/Pages/Courses/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXMvQ291cnNlcy9FZGl0LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/b.c.nims/Projects/Originals/UniversityOfScienceTwo/UniversityOfScienceTwo/Pages/Courses/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXMvQ291cnNlcy9JbmRleC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
 [/Users/b.c.nims/Projects/Originals/UniversityOfScienceTwo/UniversityOfScienceTwo/Pages/Error.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXMvRXJyb3IuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/b.c.nims/Projects/Originals/UniversityOfScienceTwo/UniversityOfScienceTwo/Pages/Faculty/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXMvRmFjdWx0eS9DcmVhdGUuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/b.c.nims/Projects/Originals/UniversityOfScienceTwo/UniversityOfScienceTwo/Pages/Faculty/Delete.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXMvRmFjdWx0eS9EZWxldGUuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/b.c.nims/Projects/Originals/UniversityOfScienceTwo/UniversityOfScienceTwo/Pages/Faculty/Details.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXMvRmFjdWx0eS9EZXRhaWxzLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/b.c.nims/Projects/Originals/UniversityOfScienceTwo/UniversityOfScienceTwo/Pages/Faculty/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXMvRmFjdWx0eS9FZGl0LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/b.c.nims/Projects/Originals/UniversityOfScienceTwo/UniversityOfScienceTwo/Pages/Faculty/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXMvRmFjdWx0eS9JbmRleC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
 [/Users/b.c.nims/Projects/Originals/UniversityOfScienceTwo/UniversityOfScienceTwo/Pages/Index.cshtml]

@@ -7,6 +7,7 @@ using EntityFramework.Exceptions.PostgreSQL;
 using UniversityOfScienceTwo.Models;
 using System.Collections.Generic;
 using System.Data.Entity;
+using System;
 
 namespace UniversityOfScienceTwo.Data;
 

@@ -1,6 +1,7 @@
 ﻿using System;
 using System.ComponentModel.DataAnnotations;
 using System.ComponentModel.DataAnnotations.Schema;
+using System.Security.Policy;
 
 namespace UniversityOfScienceTwo.Models
 {
@@ -19,7 +20,7 @@ namespace UniversityOfScienceTwo.Models
         public IList<Course> Courses { get; } = new List<Course>();
         public Professor()
         {
-    
+        
         }
     }
 }
