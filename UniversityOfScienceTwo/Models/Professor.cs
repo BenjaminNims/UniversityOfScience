@@ -1,6 +1,9 @@
 ﻿using System;
+using System.Data.Entity;
 using System.ComponentModel.DataAnnotations;
 using System.ComponentModel.DataAnnotations.Schema;
+using System.Data.Entity.ModelConfiguration.Conventions;
+using System.Collections.Generic;
 using System.Security.Policy;
 
 namespace UniversityOfScienceTwo.Models
@@ -12,6 +15,7 @@ namespace UniversityOfScienceTwo.Models
         public int ProfessorId { get; set; }
 
         public string? OwnerId { get; set; }
+
         public string? FirstName { get; set; }
         public string? LastName { get; set; }
         public string? Email { get; set; }

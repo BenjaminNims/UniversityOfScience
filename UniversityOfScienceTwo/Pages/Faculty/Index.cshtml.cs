@@ -2,6 +2,8 @@ using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
+using Microsoft.AspNetCore.Authorization;
+using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.RazorPages;
 using Microsoft.EntityFrameworkCore;
@@ -10,22 +12,24 @@ using UniversityOfScienceTwo.Models;
 
 namespace UniversityOfScienceTwo.Pages.Faculty
 {
-    public class IndexModel : PageModel
+    public class IndexModel : DI_BasePageModelProf
     {
-        private readonly UniversityOfScienceTwo.Data.ApplicationDbContext _context;
 
-        public IndexModel(UniversityOfScienceTwo.Data.ApplicationDbContext context)
+        public IndexModel(
+        ApplicationDbContext context,
+        IAuthorizationService authorizationService,
+        UserManager<IdentityUser> userManager)
+        : base(context, authorizationService, userManager)
         {
-            _context = context;
         }
 
         public IList<Professor> Professor { get;set; } = default!;
 
         public async Task OnGetAsync()
         {
-            if (_context.Professor != null)
+            if (Context.Professor != null)
             {
-                Professor = await _context.Professor.ToListAsync();
+                Professor = await Context.Professor.ToListAsync();
             }
         }
     }

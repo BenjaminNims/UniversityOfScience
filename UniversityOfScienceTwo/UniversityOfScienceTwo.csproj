@@ -38,6 +38,8 @@
     <None Remove="AWSSDK.Extensions.NETCore.Setup" />
     <None Remove="AWSSDK.SecurityToken" />
     <None Remove="AWSSDK.SecretsManager" />
+    <None Remove="Authorization\Courses Authorizations\" />
+    <None Remove="Authorization\Faculty Authorizations\" />
   </ItemGroup>
   <ItemGroup>
     <PackageReference Include="Microsoft.AspNetCore.Diagnostics.EntityFrameworkCore" Version="6.0.10" />
@@ -88,5 +90,7 @@
     <Folder Include="Models\" />
     <Folder Include="Pages\Courses\" />
     <Folder Include="Pages\Faculty\" />
+    <Folder Include="Authorization\Courses Authorizations\" />
+    <Folder Include="Authorization\Faculty Authorizations\" />
   </ItemGroup>
 </Project>

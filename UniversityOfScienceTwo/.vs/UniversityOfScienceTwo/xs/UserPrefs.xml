@@ -1,32 +1,54 @@
 ﻿<Properties StartupConfiguration="{A776C779-5010-406D-BD46-BD8B670F1242}|Default">
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+  <MonoDevelop.Ide.ItemProperties.UniversityOfScienceTwo PreferredExecutionTarget="/Applications/Safari.app" />
+  <MultiItemStartupConfigurations />
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
     <BreakpointStore />
   </MonoDevelop.Ide.DebuggingService.Breakpoints>
-  <MultiItemStartupConfigurations />
-  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
-  <MonoDevelop.Ide.ItemProperties.UniversityOfScienceTwo PreferredExecutionTarget="/Applications/Safari.app" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="Program.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Pages/Faculty/Create.cshtml.cs">
     <Files>
-      <File FileName="Program.cs" Line="1" Column="1" />
-      <File FileName="Models/Student.cs" />
-      <File FileName="Data/ApplicationDbContext.cs" />
-      <File FileName="appsettings.json" Line="16" Column="1" />
-      <File FileName="../../../../.nuget/packages/mysql.data.entityframework/8.0.31/contentFiles/any/netstandard2.1/web.config.transform" />
-      <File FileName="Migrations/20221107013854_ProfessorPopulateBreakpointTwo.cs" />
-      <File FileName="Migrations/20221105174236_ProfessorPopulateThree.cs" />
+      <File FileName="Pages/Faculty/Create.cshtml.cs" Line="47" Column="47" />
+      <File FileName="Areas/Identity/Pages/_ViewStart.cshtml" />
     </Files>
     <Pads>
       <Pad Id="ProjectPad">
         <State name="__root__">
-          <Option id="ShowAllFiles" value="True" />
           <Node name="UniversityOfScienceTwo" expanded="True">
             <Node name="UniversityOfScienceTwo" expanded="True">
-              <Node name="Program.cs" selected="True" />
+              <Node name="Areas" expanded="True">
+                <Node name="Identity" expanded="True">
+                  <Node name="Pages" expanded="True">
+                    <Node name="Account" expanded="True">
+                      <Node name="Login.cshtml" expanded="True" />
+                      <Node name="Register.cshtml" expanded="True" />
+                    </Node>
+                  </Node>
+                </Node>
+              </Node>
+              <Node name="Authorization" expanded="True" />
+              <Node name="Data" expanded="True" />
+              <Node name="Models" expanded="True" />
+              <Node name="Pages" expanded="True">
+                <Node name="Courses" expanded="True">
+                  <Node name="Create.cshtml" expanded="True" />
+                  <Node name="Delete.cshtml" expanded="True" />
+                  <Node name="Details.cshtml" expanded="True" />
+                  <Node name="Edit.cshtml" expanded="True" />
+                  <Node name="Index.cshtml" expanded="True" />
+                </Node>
+                <Node name="Faculty" expanded="True">
+                  <Node name="Create.cshtml" expanded="True" />
+                  <Node name="Details.cshtml" expanded="True" />
+                  <Node name="Edit.cshtml" expanded="True" />
+                </Node>
+                <Node name="Index.cshtml" expanded="True" />
+                <Node name="Privacy.cshtml" expanded="True" />
+              </Node>
             </Node>
           </Node>
         </State>
       </Pad>
     </Pads>
   </MonoDevelop.Ide.Workbench>
-  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
 </Properties>

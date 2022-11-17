@@ -32,6 +32,13 @@ builder.Services.AddDefaultIdentity<IdentityUser>(options => options.SignIn.Requ
     .AddEntityFrameworkStores<ApplicationDbContext>();
 builder.Services.AddRazorPages();
 
+builder.Services.AddAuthorization(options =>
+{
+    options.FallbackPolicy = new AuthorizationPolicyBuilder()
+        .RequireAuthenticatedUser()
+        .Build();
+});
+
 builder.Services.AddScoped<IAuthorizationHandler,
                       IsOwnerUniversityAuthorizationHandler>();
 
@@ -40,6 +47,15 @@ builder.Services.AddSingleton<IAuthorizationHandler,
 
 builder.Services.AddSingleton<IAuthorizationHandler,
                       UniversityProfessorAuthorizationHandler>();
+
+builder.Services.AddScoped<IAuthorizationHandler,
+                      IsOwnerProfessorAuthorizationHandler>();
+
+builder.Services.AddSingleton<IAuthorizationHandler,
+                      UniversityAdminProfAuthorizationHandler>();
+
+builder.Services.AddSingleton<IAuthorizationHandler,
+                      UniversityProfessorProfAuthorizationHandler>();
 
 builder.Services.Configure<IdentityOptions>(options =>
 {

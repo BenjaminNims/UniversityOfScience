@@ -25,9 +25,9 @@ namespace UniversityOfScienceTwo.Pages.Courses
       }
 
         [BindProperty]
-        public Course Course { get; set; } = default!;
+        public Course Course { get; set; }
 
-        public async Task<IActionResult> OnGetAsync(int? id)
+        public async Task<IActionResult> OnGetAsync(int id)
         {
 
             Course? _course = await Context.Course.FirstOrDefaultAsync(
@@ -52,18 +52,18 @@ namespace UniversityOfScienceTwo.Pages.Courses
             return Page();
         }
 
-        public async Task<IActionResult> OnPostAsync(int? id)
+        public async Task<IActionResult> OnPostAsync(int id)
         {
             var course = await Context.Course.AsNoTracking().FirstOrDefaultAsync(m => m.CourseId == id);
             
 
-            if (course != null)
+            if (course == null)
             {
                 return NotFound();
             }
 
             var isAuthorized = await AuthorizationService.AuthorizeAsync(
-                                                 User, Course,
+                                                 User, course,
                                                  UniversityOperations.Delete);
 
             if (!isAuthorized.Succeeded)

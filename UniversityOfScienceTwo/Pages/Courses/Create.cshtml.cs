@@ -15,7 +15,6 @@ namespace UniversityOfScienceTwo.Pages.Courses
 {
     public class CreateModel : DI_BasePageModel
     {
-
         public CreateModel(
             ApplicationDbContext context,
             IAuthorizationService authorizationService,
@@ -30,7 +29,7 @@ namespace UniversityOfScienceTwo.Pages.Courses
         }
 
         [BindProperty]
-        public Course Course { get; set; } = default!;
+        public Course Course { get; set; }
         
 
         // To protect from overposting attacks, see https://aka.ms/RazorPagesCRUD

@@ -23,7 +23,7 @@ namespace UniversityOfScienceTwo.Pages.Courses
         {
         }
 
-        public IList<Course> Course { get;set; } = default!;
+        public IList<Course> Course { get; set; } = default!;
 
         public async Task OnGetAsync()
         {

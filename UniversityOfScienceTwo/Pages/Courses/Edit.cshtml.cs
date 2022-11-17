@@ -32,7 +32,7 @@ namespace UniversityOfScienceTwo.Pages.Courses
         {
             Course? course = await Context.Course.FirstOrDefaultAsync(m => m.CourseId == id);
 
-            if (Course == null)
+            if (course == null)
             {
                 return NotFound();
             }

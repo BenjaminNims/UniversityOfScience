@@ -6,13 +6,14 @@ using Microsoft.AspNetCore.Identity;
 
 namespace UniversityOfScienceTwo.Authorization
 {
-    public class UniversityProfessorAuthorizationHandler :
-        AuthorizationHandler<OperationAuthorizationRequirement, Course>
+    public class UniversityProfessorProfAuthorizationHandler :
+        AuthorizationHandler<OperationAuthorizationRequirement, Professor>
     {
+        
         protected override Task
             HandleRequirementAsync(AuthorizationHandlerContext context,
                                    OperationAuthorizationRequirement requirement,
-                                   Course resource)
+                                   Professor resource)
         {
             if (context.User == null || resource == null)
             {

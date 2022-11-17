@@ -2,58 +2,76 @@ using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
+using Microsoft.AspNetCore.Authorization;
+using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.RazorPages;
 using Microsoft.AspNetCore.Mvc.Rendering;
 using Microsoft.EntityFrameworkCore;
+using UniversityOfScienceTwo.Authorization;
 using UniversityOfScienceTwo.Data;
 using UniversityOfScienceTwo.Models;
 
 namespace UniversityOfScienceTwo.Pages.Faculty
 {
-    public class EditModel : PageModel
+    public class EditModel : DI_BasePageModelProf
     {
-        private readonly UniversityOfScienceTwo.Data.ApplicationDbContext _context;
-
-        public EditModel(UniversityOfScienceTwo.Data.ApplicationDbContext context)
+        public EditModel(
+        ApplicationDbContext context,
+        IAuthorizationService authorizationService,
+        UserManager<IdentityUser> userManager)
+        : base(context, authorizationService, userManager)
         {
-            _context = context;
         }
 
         [BindProperty]
         public Professor Professor { get; set; } = default!;
 
-        public async Task<IActionResult> OnGetAsync(int? id)
+        public async Task<IActionResult> OnGetAsync(int id)
         {
-            if (id == null || _context.Professor == null)
-            {
-                return NotFound();
-            }
+            Professor? professor = await Context.Professor.FirstOrDefaultAsync(m => m.ProfessorId == id);
 
-            var professor =  await _context.Professor.FirstOrDefaultAsync(m => m.ProfessorId == id);
             if (professor == null)
             {
                 return NotFound();
             }
+
             Professor = professor;
+
+            var isAuthorized = await AuthorizationService.AuthorizeAsync(User, Professor, UniversityOperations.Update);
+
+            if (!isAuthorized.Succeeded)
+            {
+                return Forbid();
+            }
             return Page();
         }
 
         // To protect from overposting attacks, enable the specific properties you want to bind to.
         // For more details, see https://aka.ms/RazorPagesCRUD.
-        public async Task<IActionResult> OnPostAsync()
+        public async Task<IActionResult> OnPostAsync(int id)
         {
             if (!ModelState.IsValid)
             {
                 return Page();
             }
 
-            _context.Attach(Professor).State = EntityState.Modified;
+            var professor = await Context.Professor.AsNoTracking().FirstOrDefaultAsync(m => m.ProfessorId == id);
+
+            if (professor == null)
+            {
+                return NotFound();
+            }
+
+            Professor.OwnerId = professor.OwnerId;
+
+            Context.Attach(Professor).State = EntityState.Modified;
 
             try
             {
-                await _context.SaveChangesAsync();
+                await Context.SaveChangesAsync();
             }
+
             catch (DbUpdateConcurrencyException)
             {
                 if (!ProfessorExists(Professor.ProfessorId))
@@ -71,7 +89,7 @@ namespace UniversityOfScienceTwo.Pages.Faculty
 
         private bool ProfessorExists(int id)
         {
-          return (_context.Professor?.Any(e => e.ProfessorId == id)).GetValueOrDefault();
+          return (Context.Professor?.Any(e => e.ProfessorId == id)).GetValueOrDefault();
         }
     }
 }
