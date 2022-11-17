@@ -222,6 +222,61 @@ namespace UniversityOfScienceTwo.Migrations
                     b.ToTable("AspNetUserTokens", (string)null);
                 });
 
+            modelBuilder.Entity("UniversityOfScienceTwo.Models.Course", b =>
+                {
+                    b.Property<int>("CourseId")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("integer");
+
+                    NpgsqlPropertyBuilderExtensions.UseIdentityByDefaultColumn(b.Property<int>("CourseId"));
+
+                    b.Property<string>("Designation")
+                        .HasColumnType("text");
+
+                    b.Property<string>("Name")
+                        .HasColumnType("text");
+
+                    b.Property<string>("OwnerId")
+                        .HasColumnType("text");
+
+                    b.Property<int?>("ProfessorId")
+                        .HasColumnType("integer");
+
+                    b.Property<int>("Status")
+                        .HasColumnType("integer");
+
+                    b.HasKey("CourseId");
+
+                    b.HasIndex("ProfessorId");
+
+                    b.ToTable("Course");
+                });
+
+            modelBuilder.Entity("UniversityOfScienceTwo.Models.Professor", b =>
+                {
+                    b.Property<int>("ProfessorId")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("integer");
+
+                    NpgsqlPropertyBuilderExtensions.UseIdentityByDefaultColumn(b.Property<int>("ProfessorId"));
+
+                    b.Property<string>("Email")
+                        .HasColumnType("text");
+
+                    b.Property<string>("FirstName")
+                        .HasColumnType("text");
+
+                    b.Property<string>("LastName")
+                        .HasColumnType("text");
+
+                    b.Property<string>("OwnerId")
+                        .HasColumnType("text");
+
+                    b.HasKey("ProfessorId");
+
+                    b.ToTable("Professor");
+                });
+
             modelBuilder.Entity("Microsoft.AspNetCore.Identity.IdentityRoleClaim<string>", b =>
                 {
                     b.HasOne("Microsoft.AspNetCore.Identity.IdentityRole", null)
@@ -271,6 +326,20 @@ namespace UniversityOfScienceTwo.Migrations
                         .HasForeignKey("UserId")
                         .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired();
+                });
+
+            modelBuilder.Entity("UniversityOfScienceTwo.Models.Course", b =>
+                {
+                    b.HasOne("UniversityOfScienceTwo.Models.Professor", "Professor")
+                        .WithMany("Courses")
+                        .HasForeignKey("ProfessorId");
+
+                    b.Navigation("Professor");
+                });
+
+            modelBuilder.Entity("UniversityOfScienceTwo.Models.Professor", b =>
+                {
+                    b.Navigation("Courses");
                 });
 #pragma warning restore 612, 618
         }

@@ -2,3 +2,7 @@
 @using UniversityOfScienceTwo.Areas.Identity
 @using UniversityOfScienceTwo.Areas.Identity.Pages
 @addTagHelper *, Microsoft.AspNetCore.Mvc.TagHelpers
+@using UniversityOfScienceTwo.Authorization;
+@using Microsoft.AspNetCore.Authorization
+@using UniversityOfScienceTwo.Models
+@inject IAuthorizationService AuthorizationService

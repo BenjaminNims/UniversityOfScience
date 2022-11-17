@@ -8,9 +8,15 @@
     ".NETCoreApp,Version=v6.0": {
       "UniversityOfScienceTwo/1.0.0": {
         "dependencies": {
+          "AWSSDK.Core": "3.7.100.16",
+          "AWSSDK.ElasticBeanstalk": "3.7.100.16",
+          "AWSSDK.Extensions.NETCore.Setup": "3.7.2",
+          "AWSSDK.SecretsManager": "3.7.100.16",
+          "AWSSDK.SecurityToken": "3.7.100.16",
           "AspNetCore.HealthChecks.MySql": "6.0.2",
           "Devart.Data.MySql": "9.0.0",
           "EntityFramework6.Npgsql": "6.4.3",
+          "EntityFrameworkCore.Exceptions.PostgreSQL": "6.0.3",
           "Microsoft.AspNetCore.Diagnostics.EntityFrameworkCore": "6.0.10",
           "Microsoft.AspNetCore.Identity.EntityFrameworkCore": "6.0.10",
           "Microsoft.AspNetCore.Identity.UI": "6.0.10",
@@ -51,6 +57,61 @@
           "lib/net6.0/HealthChecks.MySql.dll": {
             "assemblyVersion": "6.0.2.0",
             "fileVersion": "6.0.2.0"
+          }
+        }
+      },
+      "AWSSDK.Core/3.7.100.16": {
+        "runtime": {
+          "lib/netcoreapp3.1/AWSSDK.Core.dll": {
+            "assemblyVersion": "3.3.0.0",
+            "fileVersion": "3.7.100.16"
+          }
+        }
+      },
+      "AWSSDK.ElasticBeanstalk/3.7.100.16": {
+        "dependencies": {
+          "AWSSDK.Core": "3.7.100.16"
+        },
+        "runtime": {
+          "lib/netcoreapp3.1/AWSSDK.ElasticBeanstalk.dll": {
+            "assemblyVersion": "3.3.0.0",
+            "fileVersion": "3.7.100.16"
+          }
+        }
+      },
+      "AWSSDK.Extensions.NETCore.Setup/3.7.2": {
+        "dependencies": {
+          "AWSSDK.Core": "3.7.100.16",
+          "Microsoft.Extensions.Configuration.Abstractions": "6.0.0",
+          "Microsoft.Extensions.DependencyInjection.Abstractions": "6.0.0",
+          "Microsoft.Extensions.Logging.Abstractions": "6.0.0"
+        },
+        "runtime": {
+          "lib/netstandard2.0/AWSSDK.Extensions.NETCore.Setup.dll": {
+            "assemblyVersion": "3.3.0.0",
+            "fileVersion": "3.7.1.0"
+          }
+        }
+      },
+      "AWSSDK.SecretsManager/3.7.100.16": {
+        "dependencies": {
+          "AWSSDK.Core": "3.7.100.16"
+        },
+        "runtime": {
+          "lib/netcoreapp3.1/AWSSDK.SecretsManager.dll": {
+            "assemblyVersion": "3.3.0.0",
+            "fileVersion": "3.7.100.16"
+          }
+        }
+      },
+      "AWSSDK.SecurityToken/3.7.100.16": {
+        "dependencies": {
+          "AWSSDK.Core": "3.7.100.16"
+        },
+        "runtime": {
+          "lib/netcoreapp3.1/AWSSDK.SecurityToken.dll": {
+            "assemblyVersion": "3.3.0.0",
+            "fileVersion": "3.7.100.16"
           }
         }
       },
@@ -163,6 +224,29 @@
           "lib/netstandard2.1/EntityFramework6.Npgsql.dll": {
             "assemblyVersion": "6.4.3.0",
             "fileVersion": "6.4.3.0"
+          }
+        }
+      },
+      "EntityFrameworkCore.Exceptions.Common/6.0.3": {
+        "dependencies": {
+          "Microsoft.EntityFrameworkCore": "6.0.10"
+        },
+        "runtime": {
+          "lib/net6.0/EntityFramework.Exceptions.Common.dll": {
+            "assemblyVersion": "6.0.3.0",
+            "fileVersion": "6.0.3.0"
+          }
+        }
+      },
+      "EntityFrameworkCore.Exceptions.PostgreSQL/6.0.3": {
+        "dependencies": {
+          "EntityFrameworkCore.Exceptions.Common": "6.0.3",
+          "Npgsql": "6.0.7"
+        },
+        "runtime": {
+          "lib/net6.0/EntityFramework.Exceptions.PostgreSQL.dll": {
+            "assemblyVersion": "6.0.3.0",
+            "fileVersion": "6.0.3.0"
           }
         }
       },
@@ -3164,6 +3248,41 @@
       "path": "aspnetcore.healthchecks.mysql/6.0.2",
       "hashPath": "aspnetcore.healthchecks.mysql.6.0.2.nupkg.sha512"
     },
+    "AWSSDK.Core/3.7.100.16": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-YkZi4lGGijMsZYeWrmMENMuF5HkHg1wTBJAHGlND51+nldK6njEpGSzVOKq47j1OCbSLc8j2OJDLX6ZeHMME1g==",
+      "path": "awssdk.core/3.7.100.16",
+      "hashPath": "awssdk.core.3.7.100.16.nupkg.sha512"
+    },
+    "AWSSDK.ElasticBeanstalk/3.7.100.16": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-7pmR4rH6dixHE+ncUAC+k7jj0mIKE8lRlnQmSjaFB2VfJ/vi9y1hu3/sqCbSpNQnWZjCbVDY9fe5oVI5WF81vQ==",
+      "path": "awssdk.elasticbeanstalk/3.7.100.16",
+      "hashPath": "awssdk.elasticbeanstalk.3.7.100.16.nupkg.sha512"
+    },
+    "AWSSDK.Extensions.NETCore.Setup/3.7.2": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-iFjbEnVB0f6Hr8L3EfdelHG7zxVQrOmeP9UIrX3IODR1eTsrqVrmq0mazdIr0GZK1YG2/DZiVt6tNyV1bayndw==",
+      "path": "awssdk.extensions.netcore.setup/3.7.2",
+      "hashPath": "awssdk.extensions.netcore.setup.3.7.2.nupkg.sha512"
+    },
+    "AWSSDK.SecretsManager/3.7.100.16": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-aDtSMinsiOw+VTvaAFmPwPagCor3SXZ9Xp4tFLKnAKr65WMftxJObYHa2IB8gsT3o2K8nozh6DflmAHVs9kfpg==",
+      "path": "awssdk.secretsmanager/3.7.100.16",
+      "hashPath": "awssdk.secretsmanager.3.7.100.16.nupkg.sha512"
+    },
+    "AWSSDK.SecurityToken/3.7.100.16": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-GT8viCvu6HKOcY6TybLC+1XU9HgVVirJ1ZuwBRpncfx3LnbfkGNOJpAm1oisIUUHZpM+1jPC1mujP9xGW8QCcw==",
+      "path": "awssdk.securitytoken/3.7.100.16",
+      "hashPath": "awssdk.securitytoken.3.7.100.16.nupkg.sha512"
+    },
     "Azure.Core/1.24.0": {
       "type": "package",
       "serviceable": true,
@@ -3219,6 +3338,20 @@
       "sha512": "sha512-iZnc+FlaBaK97zGHR0KS0bnwKQ2gWPpaOoSYNHfjLZ4lr4UEPRFQnh/bpW9Q50ZbNNbDRCs+W12QyVn+sKsSwA==",
       "path": "entityframework6.npgsql/6.4.3",
       "hashPath": "entityframework6.npgsql.6.4.3.nupkg.sha512"
+    },
+    "EntityFrameworkCore.Exceptions.Common/6.0.3": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-nciNKB1xMYO5a9P6rvLttCFVWa+2gwaEeuKtBaQqO24CnhNXudOZ13P1/6jSlcmy3TdbUbB1LEwJFec2n/zGrQ==",
+      "path": "entityframeworkcore.exceptions.common/6.0.3",
+      "hashPath": "entityframeworkcore.exceptions.common.6.0.3.nupkg.sha512"
+    },
+    "EntityFrameworkCore.Exceptions.PostgreSQL/6.0.3": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-kSibyS9x321oUCwiFxcyrj0pb1GeEklALTu5xh4MVvbnvpOl8xMSo9vXAzMVtk6a5m9lNv5oXTaSQ5b/w8LAUw==",
+      "path": "entityframeworkcore.exceptions.postgresql/6.0.3",
+      "hashPath": "entityframeworkcore.exceptions.postgresql.6.0.3.nupkg.sha512"
     },
     "Google.Protobuf/3.19.4": {
       "type": "package",
