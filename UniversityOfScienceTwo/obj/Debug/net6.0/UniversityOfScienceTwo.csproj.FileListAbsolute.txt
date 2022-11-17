@@ -7,6 +7,11 @@
 /Users/b.c.nims/Projects/Originals/UniversityOfScienceTwo/UniversityOfScienceTwo/bin/Debug/net6.0/UniversityOfScienceTwo.dll
 /Users/b.c.nims/Projects/Originals/UniversityOfScienceTwo/UniversityOfScienceTwo/bin/Debug/net6.0/UniversityOfScienceTwo.pdb
 /Users/b.c.nims/Projects/Originals/UniversityOfScienceTwo/UniversityOfScienceTwo/bin/Debug/net6.0/HealthChecks.MySql.dll
+/Users/b.c.nims/Projects/Originals/UniversityOfScienceTwo/UniversityOfScienceTwo/bin/Debug/net6.0/AWSSDK.Core.dll
+/Users/b.c.nims/Projects/Originals/UniversityOfScienceTwo/UniversityOfScienceTwo/bin/Debug/net6.0/AWSSDK.ElasticBeanstalk.dll
+/Users/b.c.nims/Projects/Originals/UniversityOfScienceTwo/UniversityOfScienceTwo/bin/Debug/net6.0/AWSSDK.Extensions.NETCore.Setup.dll
+/Users/b.c.nims/Projects/Originals/UniversityOfScienceTwo/UniversityOfScienceTwo/bin/Debug/net6.0/AWSSDK.SecretsManager.dll
+/Users/b.c.nims/Projects/Originals/UniversityOfScienceTwo/UniversityOfScienceTwo/bin/Debug/net6.0/AWSSDK.SecurityToken.dll
 /Users/b.c.nims/Projects/Originals/UniversityOfScienceTwo/UniversityOfScienceTwo/bin/Debug/net6.0/Azure.Core.dll
 /Users/b.c.nims/Projects/Originals/UniversityOfScienceTwo/UniversityOfScienceTwo/bin/Debug/net6.0/Azure.Identity.dll
 /Users/b.c.nims/Projects/Originals/UniversityOfScienceTwo/UniversityOfScienceTwo/bin/Debug/net6.0/dbup-core.dll
@@ -16,6 +21,8 @@
 /Users/b.c.nims/Projects/Originals/UniversityOfScienceTwo/UniversityOfScienceTwo/bin/Debug/net6.0/EntityFramework.SqlServer.dll
 /Users/b.c.nims/Projects/Originals/UniversityOfScienceTwo/UniversityOfScienceTwo/bin/Debug/net6.0/EntityFramework.dll
 /Users/b.c.nims/Projects/Originals/UniversityOfScienceTwo/UniversityOfScienceTwo/bin/Debug/net6.0/EntityFramework6.Npgsql.dll
+/Users/b.c.nims/Projects/Originals/UniversityOfScienceTwo/UniversityOfScienceTwo/bin/Debug/net6.0/EntityFramework.Exceptions.Common.dll
+/Users/b.c.nims/Projects/Originals/UniversityOfScienceTwo/UniversityOfScienceTwo/bin/Debug/net6.0/EntityFramework.Exceptions.PostgreSQL.dll
 /Users/b.c.nims/Projects/Originals/UniversityOfScienceTwo/UniversityOfScienceTwo/bin/Debug/net6.0/Google.Protobuf.dll
 /Users/b.c.nims/Projects/Originals/UniversityOfScienceTwo/UniversityOfScienceTwo/bin/Debug/net6.0/Humanizer.dll
 /Users/b.c.nims/Projects/Originals/UniversityOfScienceTwo/UniversityOfScienceTwo/bin/Debug/net6.0/K4os.Compression.LZ4.dll
@@ -338,6 +345,11 @@
 /Users/b.c.nims/Projects/Originals/UniversityOfScienceTwo/UniversityOfScienceTwo/obj/Debug/net6.0/UniversityOfScienceTwo.MvcApplicationPartsAssemblyInfo.cache
 /Users/b.c.nims/Projects/Originals/UniversityOfScienceTwo/UniversityOfScienceTwo/obj/Debug/net6.0/UniversityOfScienceTwo.RazorAssemblyInfo.cache
 /Users/b.c.nims/Projects/Originals/UniversityOfScienceTwo/UniversityOfScienceTwo/obj/Debug/net6.0/UniversityOfScienceTwo.RazorAssemblyInfo.cs
+/Users/b.c.nims/Projects/Originals/UniversityOfScienceTwo/UniversityOfScienceTwo/obj/Debug/net6.0/staticwebassets/msbuild.UniversityOfScienceTwo.Microsoft.AspNetCore.StaticWebAssets.props
+/Users/b.c.nims/Projects/Originals/UniversityOfScienceTwo/UniversityOfScienceTwo/obj/Debug/net6.0/staticwebassets/msbuild.build.UniversityOfScienceTwo.props
+/Users/b.c.nims/Projects/Originals/UniversityOfScienceTwo/UniversityOfScienceTwo/obj/Debug/net6.0/staticwebassets/msbuild.buildMultiTargeting.UniversityOfScienceTwo.props
+/Users/b.c.nims/Projects/Originals/UniversityOfScienceTwo/UniversityOfScienceTwo/obj/Debug/net6.0/staticwebassets/msbuild.buildTransitive.UniversityOfScienceTwo.props
+/Users/b.c.nims/Projects/Originals/UniversityOfScienceTwo/UniversityOfScienceTwo/obj/Debug/net6.0/staticwebassets.pack.json
 /Users/b.c.nims/Projects/Originals/UniversityOfScienceTwo/UniversityOfScienceTwo/obj/Debug/net6.0/staticwebassets.build.json
 /Users/b.c.nims/Projects/Originals/UniversityOfScienceTwo/UniversityOfScienceTwo/obj/Debug/net6.0/staticwebassets.development.json
 /Users/b.c.nims/Projects/Originals/UniversityOfScienceTwo/UniversityOfScienceTwo/obj/Debug/net6.0/scopedcss/Pages/Shared/_Layout.cshtml.rz.scp.css
@@ -349,5 +361,3 @@
 /Users/b.c.nims/Projects/Originals/UniversityOfScienceTwo/UniversityOfScienceTwo/obj/Debug/net6.0/UniversityOfScienceTwo.pdb
 /Users/b.c.nims/Projects/Originals/UniversityOfScienceTwo/UniversityOfScienceTwo/obj/Debug/net6.0/UniversityOfScienceTwo.genruntimeconfig.cache
 /Users/b.c.nims/Projects/Originals/UniversityOfScienceTwo/UniversityOfScienceTwo/obj/Debug/net6.0/ref/UniversityOfScienceTwo.dll
-/Users/b.c.nims/Projects/Originals/UniversityOfScienceTwo/UniversityOfScienceTwo/bin/Debug/net6.0/EntityFramework.Exceptions.Common.dll
-/Users/b.c.nims/Projects/Originals/UniversityOfScienceTwo/UniversityOfScienceTwo/bin/Debug/net6.0/EntityFramework.Exceptions.PostgreSQL.dll

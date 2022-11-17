@@ -33,6 +33,11 @@
     <None Remove="Pages\Courses\" />
     <None Remove="EntityFrameworkCore.Exceptions.PostgreSQL" />
     <None Remove="Pages\Faculty\" />
+    <None Remove="AWSSDK.ElasticBeanstalk" />
+    <None Remove="AWSSDK.Core" />
+    <None Remove="AWSSDK.Extensions.NETCore.Setup" />
+    <None Remove="AWSSDK.SecurityToken" />
+    <None Remove="AWSSDK.SecretsManager" />
   </ItemGroup>
   <ItemGroup>
     <PackageReference Include="Microsoft.AspNetCore.Diagnostics.EntityFrameworkCore" Version="6.0.10" />
@@ -71,6 +76,11 @@
     <PackageReference Include="Npgsql.EntityFrameworkCore.PostgreSQL" Version="6.0.7" />
     <PackageReference Include="EntityFramework6.Npgsql" Version="6.4.3" />
     <PackageReference Include="EntityFrameworkCore.Exceptions.PostgreSQL" Version="6.0.3" />
+    <PackageReference Include="AWSSDK.ElasticBeanstalk" Version="3.7.100.16" />
+    <PackageReference Include="AWSSDK.Core" Version="3.7.100.16" />
+    <PackageReference Include="AWSSDK.Extensions.NETCore.Setup" Version="3.7.2" />
+    <PackageReference Include="AWSSDK.SecurityToken" Version="3.7.100.16" />
+    <PackageReference Include="AWSSDK.SecretsManager" Version="3.7.100.16" />
   </ItemGroup>
 
   <ItemGroup>

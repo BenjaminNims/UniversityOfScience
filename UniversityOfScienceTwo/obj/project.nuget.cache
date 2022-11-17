@@ -1,10 +1,15 @@
 {
   "version": 2,
-  "dgSpecHash": "0vnWObxkH0IF51HQ5uaXi4cSYDCOXdj7XL3PPz98SrB0D3IBuU8LIQo9zemgBhUoE3c72AEZpbiwbOT8CFsc0w==",
+  "dgSpecHash": "CKQgDP1+KQmO1jMY+1FmGZBem/CEzBaQugbSYq9V87rB9XVKdn9QjkRCrFkqsKdp9C7BOeSXVT9CE6umUl83CA==",
   "success": true,
   "projectFilePath": "/Users/b.c.nims/Projects/Originals/UniversityOfScienceTwo/UniversityOfScienceTwo/UniversityOfScienceTwo.csproj",
   "expectedPackageFiles": [
     "/Users/b.c.nims/.nuget/packages/aspnetcore.healthchecks.mysql/6.0.2/aspnetcore.healthchecks.mysql.6.0.2.nupkg.sha512",
+    "/Users/b.c.nims/.nuget/packages/awssdk.core/3.7.100.16/awssdk.core.3.7.100.16.nupkg.sha512",
+    "/Users/b.c.nims/.nuget/packages/awssdk.elasticbeanstalk/3.7.100.16/awssdk.elasticbeanstalk.3.7.100.16.nupkg.sha512",
+    "/Users/b.c.nims/.nuget/packages/awssdk.extensions.netcore.setup/3.7.2/awssdk.extensions.netcore.setup.3.7.2.nupkg.sha512",
+    "/Users/b.c.nims/.nuget/packages/awssdk.secretsmanager/3.7.100.16/awssdk.secretsmanager.3.7.100.16.nupkg.sha512",
+    "/Users/b.c.nims/.nuget/packages/awssdk.securitytoken/3.7.100.16/awssdk.securitytoken.3.7.100.16.nupkg.sha512",
     "/Users/b.c.nims/.nuget/packages/azure.core/1.24.0/azure.core.1.24.0.nupkg.sha512",
     "/Users/b.c.nims/.nuget/packages/azure.identity/1.6.0/azure.identity.1.6.0.nupkg.sha512",
     "/Users/b.c.nims/.nuget/packages/dbup-core/4.6.0/dbup-core.4.6.0.nupkg.sha512",
