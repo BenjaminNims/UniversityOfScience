@@ -8,6 +8,8 @@ At completion, a user will be able to log in as a student, professor, department
 
 https://www.youtube.com/watch?v=UeY5Ido5l7w
 
+I log in as a professor (norm@uscience.com) and as an admin (admin@uscience.com) to demonstrate the differing security class permissions.
+
 ## Technologies Used
 
 .NET Core/EF 6 with Razor Pages, Postgres/pgadmin, Identity
