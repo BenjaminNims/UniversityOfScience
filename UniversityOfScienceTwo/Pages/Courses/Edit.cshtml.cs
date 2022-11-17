@@ -28,7 +28,7 @@ namespace UniversityOfScienceTwo.Pages.Courses
         [BindProperty]
         public Course Course { get; set; } = default!;
 
-        public async Task<IActionResult> OnGetAsync(int? id)
+        public async Task<IActionResult> OnGetAsync(int id)
         {
             Course? course = await Context.Course.FirstOrDefaultAsync(m => m.CourseId == id);
 
@@ -95,6 +95,7 @@ namespace UniversityOfScienceTwo.Pages.Courses
                 }
             }
 
+            await Context.SaveChangesAsync();
 
             return RedirectToPage("./Index");
         }
